@@ -9,14 +9,19 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 500) {
+      // Используем scrollY вместо устаревшего pageYOffset
+      const scrolled = window.scrollY || window.pageYOffset
+      if (scrolled > 500) {
         setIsVisible(true)
       } else {
         setIsVisible(false)
       }
     }
 
-    window.addEventListener('scroll', toggleVisibility)
+    // Проверяем сразу при монтировании
+    toggleVisibility()
+
+    window.addEventListener('scroll', toggleVisibility, { passive: true })
 
     return () => window.removeEventListener('scroll', toggleVisibility)
   }, [])

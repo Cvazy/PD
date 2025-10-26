@@ -71,10 +71,10 @@ export default function ProblemsSection() {
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
               whileHover={{ y: -10 }}
-              className="group relative"
+              className="group relative will-change-transform"
             >
               {/* Card */}
               <div className="relative h-full p-8 rounded-3xl bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700">

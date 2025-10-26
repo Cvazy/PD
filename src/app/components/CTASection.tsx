@@ -11,27 +11,6 @@ export default function CTASection() {
     >
       {/* Animated Background */}
       <div className="absolute inset-0 -z-10">
-        {/* Animated Particles */}
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            initial={{
-              x: Math.random() * 1920,
-              y: Math.random() * 800,
-            }}
-            animate={{
-              y: [null, -100, 800],
-              opacity: [0, 1, 0],
-            }}
-            transition={{
-              duration: Math.random() * 10 + 10,
-              repeat: Infinity,
-              delay: Math.random() * 5,
-            }}
-            className="absolute w-2 h-2 bg-white rounded-full"
-          />
-        ))}
-
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
       </div>
