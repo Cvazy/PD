@@ -34,7 +34,7 @@ export default function ScrollToTop() {
   }
 
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="wait">
       {isVisible && (
         <motion.button
           initial={{ opacity: 0, scale: 0.5 }}
@@ -43,7 +43,13 @@ export default function ScrollToTop() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 p-4 rounded-full bg-gradient-to-br from-primary-600 to-purple-600 text-white shadow-2xl hover:shadow-primary-500/50 transition-all"
+          style={{ 
+            position: 'fixed',
+            bottom: '2rem',
+            right: '2rem',
+            willChange: 'transform, opacity'
+          }}
+          className="z-[9999] p-4 rounded-full bg-gradient-to-br from-primary-600 to-purple-600 text-white shadow-2xl hover:shadow-primary-500/50 transition-all pointer-events-auto"
           aria-label="Scroll to top"
         >
           <ArrowUp className="w-6 h-6" />

@@ -5,7 +5,6 @@ import SolutionsSection from './components/SolutionsSection'
 import BenefitsSection from './components/BenefitsSection'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
-import ScrollToTop from './components/ScrollToTop'
 import AnimatedBackground from './components/AnimatedBackground'
 import StructuredData from './components/StructuredData'
 
@@ -13,7 +12,7 @@ export default function Home() {
   return (
     <>
       <StructuredData />
-      <main className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-300 relative">
+      <main className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-300">
         <AnimatedBackground />
         <Header />
         <HeroSection />
@@ -22,7 +21,6 @@ export default function Home() {
         <BenefitsSection />
         <CTASection />
         <Footer />
-        <ScrollToTop />
       </main>
     </>
   )

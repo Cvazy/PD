@@ -102,8 +102,9 @@ html {
 
 /* Оптимизация производительности на мобилках */
 @media (max-width: 768px) {
-  /* GPU acceleration для плавности */
-  * {
+  /* GPU acceleration для плавности - НЕ для всех элементов! */
+  /* Исключаем fixed элементы */
+  main * {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
   }
