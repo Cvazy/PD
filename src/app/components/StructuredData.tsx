@@ -26,8 +26,8 @@ export default function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Московский Политех',
-    url: 'https://your-project.netlify.app',
-    logo: 'https://your-project.netlify.app/logo.svg',
+    url: 'https://coruscating-cannoli-391e09.netlify.app',
+    logo: 'https://coruscating-cannoli-391e09.netlify.app/logo.svg',
     sameAs: [
       'https://t.me/your_bot',
     ],

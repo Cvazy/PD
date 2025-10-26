@@ -10,7 +10,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://your-project.netlify.app'),
+  metadataBase: new URL('https://coruscating-cannoli-391e09.netlify.app'),
   title: {
     default: 'Бот "РУПы" - Закрой академические долги без стресса | Московский Политех',
     template: '%s | Бот РУПы'
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ru_RU',
-    url: 'https://your-project.netlify.app',
+    url: 'https://coruscating-cannoli-391e09.netlify.app',
     title: 'Бот "РУПы" - Закрой академические долги без стресса',
     description: 'Персональный Telegram-бот для студентов. Напоминания о дедлайнах, контроль РУПов, советы по учебе. 500+ студентов уже используют!',
     siteName: 'Бот РУПы',
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     images: ['/og-image.jpg'],
   },
   alternates: {
-    canonical: 'https://your-project.netlify.app',
+    canonical: 'https://coruscating-cannoli-391e09.netlify.app',
   },
   manifest: '/manifest.json',
   icons: {

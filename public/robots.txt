@@ -18,5 +18,5 @@ Disallow: /
 User-agent: Claude-Web
 Disallow: /
 
-# Sitemap (ВАЖНО: замени URL на свой от Netlify после деплоя!)
-Sitemap: https://your-project.netlify.app/sitemap.xml
+# Sitemap
+Sitemap: https://coruscating-cannoli-391e09.netlify.app/sitemap.xml
